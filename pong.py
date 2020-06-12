@@ -105,13 +105,13 @@ while True:
     # corner and border checking right and left
     if ball.xcor() > 330:
         ball.dx *= -1
-        scoreA += 1
+        scoreB += 1
         pen.clear()
         pen.write("Player A: {}  Player B: {}".format(scoreB, scoreA), align="center", font=("Courier", 24, "normal"))
 
     elif ball.xcor() < -330:
         ball.dx *= -1
-        scoreB += 1
+        scoreA += 1
         pen.clear()
         pen.write("Player A: {}  Player B: {}".format(scoreB, scoreA), align="center", font=("Courier", 24, "normal"))
 
